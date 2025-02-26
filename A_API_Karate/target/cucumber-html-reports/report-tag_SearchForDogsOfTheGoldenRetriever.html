@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @SearchForDogsOfTheGoldenRetriever</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ABSA Assessment QA Automation</td>
+            <td>26 Feb 2025, 18:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@SearchForDogsOfTheGoldenRetriever</td>
+                    <td      class="passed"    >9</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">9</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1960425124">1.960</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-java-FeatureFiles-PetFinderAPI-feature.html">src/test/java/FeatureFiles/PetFinderAPI.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_SearchForDogsOfTheGoldenRetriever.html">@SearchForDogsOfTheGoldenRetriever</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.960</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Search for dogs of the &quot;golden retriever&quot; breed and verify that at least one result is returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def accessToken = read('file:src/test/java/Tokens/OauthAccessToken.txt')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = 'Bearer ' + accessToken</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">path '/v2/animals'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param breed = 'golden retriever'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1.921</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:49:28.736 request:
+1 &gt; GET https://api.petfinder.com/v2/animals?breed=golden+retriever
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpUmxpUlNDNndnUk9VWDFEU2Nyam54Tzd0Y2JZUWxpWlV1N1dFQnZGMWI4QUNpSm5FQiIsImp0aSI6IjllYmNmZDZkYmFhYjUxMDZiN2I4M2I3YWMyOTA2NDUyMjA0YmU3YzIyYWQ3MzExN2M4YmI5M2UxZTdmMzcyMzYxNjdkOTc5MWZkN2JiOGI4IiwiaWF0IjoxNzQwNTg4NTM3LCJuYmYiOjE3NDA1ODg1MzcsImV4cCI6MTc0MDU5MjEzNywic3ViIjoiIiwic2NvcGVzIjpbXX0.H8WWi6UUpmI2rsJ6e7f_jmvIUXOl_Ah7L6BKVL-Y6eTERCSgGuGcV_NbRva-n1Qx1D2F9rzG8Oq2DGhoG-kD-ebhs6OFJFoToQlGElSSfg1SNhoXvizcj6V2gPmkISqR5MK-7vjv4T7rqXckg8YwT8yEd0rlq3RCJulkXZCKM3f6K9PRUn-yEwBaaRByTXV2ExFbvBOGD9JG1A624xGe6MCFQKG2x3bQbjMalMG6fr1I_Xl7iHBPJddhL8ZUEGYkZQQWZBxjpigKCBb6SAaMU8DY0rtVOQqeOL6mQlInf0QUmxcmZS2OnzX23-fykzICKf9pHHrZRdyV1ES7aEmXBg
+1 &gt; Host: api.petfinder.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:49:30.643 response time in milliseconds: 1898
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 26 Feb 2025 16:49:30 GMT
+1 &lt; x-amzn-Remapped-Date: Wed, 26 Feb 2025 16:49:30 GMT
+1 &lt; x-amzn-RequestId: dfcf0d8c-1678-4903-b7d9-3c421ef4cc55
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; x-amzn-Remapped-Connection: keep-alive
+1 &lt; x-amz-apigw-id: GmfkGHWSIAMEn0w=
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 4747327ef420c7848edeb2100de57710.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: JNB50-C1
+1 &lt; X-Amz-Cf-Id: hTCRyY9gxT1C5qi0SGNgtifkeq2d1Nla7jzacvmdy65xTbKmLhKkkQ==
+{&quot;pagination&quot;:{&quot;_links&quot;:{&quot;next&quot;:{&quot;href&quot;:&quot;\/v2\/animals?breed=golden%20retriever&amp;page=2&quot;}},&quot;count_per_page&quot;:20,&quot;total_count&quot;:1103,&quot;total_pages&quot;:56,&quot;current_page&quot;:1},&quot;animals&quot;:[{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/nc1205&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75328082&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T16:38:42+0000&quot;,&quot;description&quot;:&quot;Introducing Stuart!\n\nThis fluffy fella ended up at a high kill shelter in Houston. He was added to the euthanasia...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Apricot \/ Beige&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Chow Chow&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Houston&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;77018&quot;,&quot;state&quot;:&quot;TX&quot;},&quot;phone&quot;:&quot;(201) 906-7848&quot;,&quot;email&quot;:&quot;info@destinationrescue.org&quot;},&quot;id&quot;:75328082,&quot;published_at&quot;:&quot;2025-02-26T16:38:40+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121\/image\/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/stuart-75328082\/tx\/houston\/destination-rescue-nc1205\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Curious&quot;,&quot;Friendly&quot;,&quot;Loves&quot;,&quot;Smart&quot;],&quot;coat&quot;:&quot;Long&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;NC1205&quot;,&quot;name&quot;:&quot;Stuart&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:true},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ct414&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75327643&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T15:27:58+0000&quot;,&quot;description&quot;:&quot;Moose is a sweet, well socialized, friendly pup and he is going to make a welcome addition to his new...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Labrador Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Watertown&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;06795&quot;,&quot;state&quot;:&quot;CT&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;mollibo@gmail.com&quot;},&quot;id&quot;:75327643,&quot;published_at&quot;:&quot;2025-02-26T15:27:57+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/62d15b60-041d-4476-b49f-9da71bd58310\/image\/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/moose-75327643\/ct\/watertown\/companion-pet-rescue-new-england-ct414\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Playful&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:true,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;CT414&quot;,&quot;name&quot;:&quot;Moose&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Baby&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ct414&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75327530&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T15:19:43+0000&quot;,&quot;description&quot;:&quot;Mia is a cute, friendly, well socialized pup and she is going to make a welcome addition to her new...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Black&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Labrador Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Watertown&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;06795&quot;,&quot;state&quot;:&quot;CT&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;mollibo@gmail.com&quot;},&quot;id&quot;:75327530,&quot;published_at&quot;:&quot;2025-02-26T15:19:42+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/7ced735e-2341-4cf1-9d59-9ec928ff7eb1\/image\/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/mia-75327530\/ct\/watertown\/companion-pet-rescue-new-england-ct414\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Playful&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:true,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;CT414&quot;,&quot;name&quot;:&quot;Mia&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Baby&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ct414&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75327427&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T15:04:43+0000&quot;,&quot;description&quot;:&quot;Little Ms. Mocha is a cute, friendly, affectionate puppy and will make a welcome addition to their new household!\n\nThis...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:&quot;White \/ Cream&quot;,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Labrador Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Watertown&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;06795&quot;,&quot;state&quot;:&quot;CT&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;mollibo@gmail.com&quot;},&quot;id&quot;:75327427,&quot;published_at&quot;:&quot;2025-02-26T15:04:41+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64\/image\/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/ms-mocha-75327427\/ct\/watertown\/companion-pet-rescue-new-england-ct414\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Funny&quot;,&quot;Playful&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:true,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;CT414&quot;,&quot;name&quot;:&quot;Ms. Mocha&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Baby&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/tx2471&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326951&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T14:49:06+0000&quot;,&quot;description&quot;:null,&quot;organization_animal_id&quot;:&quot;57914408&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:&quot;White \/ Cream&quot;,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Mixed Breed&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;El Paso&quot;,&quot;address1&quot;:&quot;5001 Fred Wilson&quot;,&quot;postcode&quot;:&quot;79906&quot;,&quot;state&quot;:&quot;TX&quot;},&quot;phone&quot;:&quot;(915) 212-7297&quot;,&quot;email&quot;:&quot;epasadoptions@elpasotexas.gov&quot;},&quot;id&quot;:75326951,&quot;published_at&quot;:&quot;2025-02-26T14:49:04+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326951\/1\/?bust=1740581441&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/57914408-75326951\/tx\/el-paso\/el-paso-animal-services-tx2471\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;TX2471&quot;,&quot;name&quot;:&quot;57914408&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/fl618&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326909&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T14:48:07+0000&quot;,&quot;description&quot;:null,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Yellow \/ Tan \/ Blond \/ Fawn&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Australian Shepherd&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Gainesville&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;32653&quot;,&quot;state&quot;:&quot;FL&quot;},&quot;phone&quot;:&quot;(352) 363-1364&quot;,&quot;email&quot;:&quot;s.chancerescue@gmail.com&quot;},&quot;id&quot;:75326909,&quot;published_at&quot;:&quot;2025-02-26T14:48:06+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/5fe6a025-6d8d-4bfc-b602-78b25fd112d4\/image\/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/beau-75326909\/fl\/gainesville\/second-chance-rescue-and-rehoming-inc-fl618\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Curious&quot;,&quot;Friendly&quot;,&quot;Funny&quot;,&quot;Playful&quot;,&quot;Smart&quot;],&quot;coat&quot;:&quot;Medium&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;FL618&quot;,&quot;name&quot;:&quot;Beau&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:true},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ia55&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326880&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T14:40:51+0000&quot;,&quot;description&quot;:&quot;If you have ANY QUESTIONS or are truly interested in adopting any animal from PAW Animal Shelter Please, fillout an...&quot;,&quot;organization_animal_id&quot;:&quot;ps_2314952-10615&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:null},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:&quot;P.O. Box 181&quot;,&quot;city&quot;:&quot;Fort Madison&quot;,&quot;address1&quot;:&quot;2031 48th Street&quot;,&quot;postcode&quot;:&quot;52627&quot;,&quot;state&quot;:&quot;IA&quot;},&quot;phone&quot;:&quot;319-372-2274 &quot;,&quot;email&quot;:&quot;emmittsway@yahoo.com&quot;},&quot;id&quot;:75326880,&quot;published_at&quot;:&quot;2025-02-26T14:40:50+0000&quot;,&quot;primary_photo_cropped&quot;:null,&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/rowdy-75326880\/ia\/fort-madison\/protectors-of-animal-welfare-p-dot-aw-dot-ia55\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;IA55&quot;,&quot;name&quot;:&quot;Rowdy&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ma128&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326761&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T14:16:36+0000&quot;,&quot;description&quot;:&quot;Hello there , Rufus here. I am 2 years old and house trained and dog friendly. I would love a...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Black&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Labrador Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Gloucester&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;01930&quot;,&quot;state&quot;:&quot;MA&quot;},&quot;phone&quot;:&quot;(978) 283-6055&quot;,&quot;email&quot;:&quot;info@capeannanimalaid.org&quot;},&quot;id&quot;:75326761,&quot;published_at&quot;:&quot;2025-02-26T14:16:34+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/d05a24a5-155b-4849-b28f-eacffbefe081\/image\/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/rufus-75326761\/ma\/gloucester\/cape-ann-animal-aid-ma128\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:&quot;Long&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;MA128&quot;,&quot;name&quot;:&quot;Rufus&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:true},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ms09&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326647&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T13:58:56+0000&quot;,&quot;description&quot;:null,&quot;organization_animal_id&quot;:&quot;57871158&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&quot;},{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/2\/?bust=1740578433&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/2\/?bust=1740578433&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/2\/?bust=1740578433&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/2\/?bust=1740578433&quot;},{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/3\/?bust=1740578433&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/3\/?bust=1740578433&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/3\/?bust=1740578433&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/3\/?bust=1740578433&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:null},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Mixed Breed&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Picayune&quot;,&quot;address1&quot;:&quot;1700 Palestine Road&quot;,&quot;postcode&quot;:&quot;39466&quot;,&quot;state&quot;:&quot;MS&quot;},&quot;phone&quot;:&quot;601-798-8000&quot;,&quot;email&quot;:&quot;prcspca@prcspca.org&quot;},&quot;id&quot;:75326647,&quot;published_at&quot;:&quot;2025-02-26T13:58:54+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326647\/1\/?bust=1740578431&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/crown-75326647\/ms\/picayune\/pearl-river-county-spca-ms09\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;MS09&quot;,&quot;name&quot;:&quot;Crown&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:false,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/il959&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326388&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T12:59:04+0000&quot;,&quot;description&quot;:&quot;Meet Robbie, a 2-month-old Golden Retriever from Indiana with a heart full of promise! This adorable little guy is sure...&quot;,&quot;organization_animal_id&quot;:&quot;BTIL-A-26910&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;White \/ Cream&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Northbrook&quot;,&quot;address1&quot;:&quot;2975 Milwaukee Ave&quot;,&quot;postcode&quot;:&quot;60062&quot;,&quot;state&quot;:&quot;IL&quot;},&quot;phone&quot;:&quot;(847) 813-5774&quot;,&quot;email&quot;:&quot;adopt@bordertailsrescue.org&quot;},&quot;id&quot;:75326388,&quot;published_at&quot;:&quot;2025-02-26T12:59:02+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75326388\/1\/?bust=1740574849&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/robbie-75326388\/il\/northbrook\/border-tails-rescue-il959\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;IL959&quot;,&quot;name&quot;:&quot;Robbie&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Baby&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ca270&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75326207&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T12:43:31+0000&quot;,&quot;description&quot;:null,&quot;organization_animal_id&quot;:&quot;SATG-A-9722&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Red \/ Chestnut \/ Orange&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Standard Poodle&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Long Beach&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;90804&quot;,&quot;state&quot;:&quot;CA&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;Sparkyandthegang@yahoo.com&quot;},&quot;id&quot;:75326207,&quot;published_at&quot;:&quot;2025-02-26T12:43:30+0000&quot;,&quot;primary_photo_cropped&quot;:null,&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/bella-doodle-75326207\/ca\/long-beach\/sparky-and-the-gang-ca270\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;CA270&quot;,&quot;name&quot;:&quot;Bella Doodle&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/ia295&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75325968&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T12:12:03+0000&quot;,&quot;description&quot;:null,&quot;organization_animal_id&quot;:&quot;AHIA-A-1671&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Red \/ Chestnut \/ Orange&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Golden Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Irish Setter&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Chariton&quot;,&quot;address1&quot;:&quot;118 East Lincoln Ave&quot;,&quot;postcode&quot;:&quot;50049&quot;,&quot;state&quot;:&quot;IA&quot;},&quot;phone&quot;:&quot;(641) 774-2840&quot;,&quot;email&quot;:&quot;manager@almosthomear.com&quot;},&quot;id&quot;:75325968,&quot;published_at&quot;:&quot;2025-02-26T12:12:01+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75325968\/1\/?bust=1740572058&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/sully-75325968\/ia\/chariton\/almost-home-animal-rescue-ia295\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;IA295&quot;,&quot;name&quot;:&quot;Sully&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/fl316&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75325844&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T11:58:08+0000&quot;,&quot;description&quot;:&quot;Not looking to play games, just looking for somebody to play fetch with.\n\nI was surrendered to the Humane Society...&quot;,&quot;organization_animal_id&quot;:&quot;HSTB-A-119463&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Tampa&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;33607&quot;,&quot;state&quot;:&quot;FL&quot;},&quot;phone&quot;:&quot;(813) 876-7138&quot;,&quot;email&quot;:&quot;adopt@humanesocietytampa.org&quot;},&quot;id&quot;:75325844,&quot;published_at&quot;:&quot;2025-02-26T11:58:07+0000&quot;,&quot;primary_photo_cropped&quot;:null,&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/bailey-75325844\/fl\/tampa\/humane-society-of-tampa-bay-fl316\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Good with Dogs&quot;,&quot;Good with Cats&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:true,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;FL316&quot;,&quot;name&quot;:&quot;Bailey&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/il173&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75325337&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T11:37:39+0000&quot;,&quot;description&quot;:&quot;Hi, I&amp;amp;#39;m Bentley. A sweet and loving boy, looking for a loving home.\n\nWhen I arrived at Anderson Animal Shelter...&quot;,&quot;organization_animal_id&quot;:&quot;AHC-A-180902&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;White \/ Cream&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Golden Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Great Pyrenees&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;South Elgin&quot;,&quot;address1&quot;:&quot;1000 S. LaFox St. (Route 31)&quot;,&quot;postcode&quot;:&quot;60177&quot;,&quot;state&quot;:&quot;IL&quot;},&quot;phone&quot;:&quot;(847) 697-2880&quot;,&quot;email&quot;:&quot;info@ahconnects.org&quot;},&quot;id&quot;:75325337,&quot;published_at&quot;:&quot;2025-02-26T11:37:38+0000&quot;,&quot;primary_photo_cropped&quot;:null,&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/bentley-75325337\/il\/south-elgin\/anderson-animal-shelter-il173\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Heartworm Positive&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;IL173&quot;,&quot;name&quot;:&quot;Bentley&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/pa835&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75324729&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T10:28:37+0000&quot;,&quot;description&quot;:&quot;Meet Daisy! \nBreed: Golden Retriever \/ Irish Setter Mix Age: 10 Months \nSurrendered Due to Allergies\nDaisy is a playful,...&quot;,&quot;organization_animal_id&quot;:&quot;ZOE-A-1825&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&quot;},{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/2\/?bust=1740565830&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/2\/?bust=1740565830&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/2\/?bust=1740565830&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/2\/?bust=1740565830&quot;},{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/3\/?bust=1740565838&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/3\/?bust=1740565838&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/3\/?bust=1740565838&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/3\/?bust=1740565838&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Red \/ Chestnut \/ Orange&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Irish Setter&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Sinking Spring&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;19608&quot;,&quot;state&quot;:&quot;PA&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;zoeshouserescue@gmail.com&quot;},&quot;id&quot;:75324729,&quot;published_at&quot;:&quot;2025-02-26T10:28:35+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75324729\/1\/?bust=1740565827&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/daisy-75324729\/pa\/sinking-spring\/zoes-house-pa835\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;High Energy&quot;,&quot;Adult Only Home Preferred&quot;],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:false,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;PA835&quot;,&quot;name&quot;:&quot;Daisy&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/pa142&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75323694&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T07:09:23+0000&quot;,&quot;description&quot;:&quot;I was found in Penn Park.&quot;,&quot;organization_animal_id&quot;:&quot;YORK-A-12229&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;York&quot;,&quot;address1&quot;:&quot;3159 N. Susquehanna Trail&quot;,&quot;postcode&quot;:&quot;17406&quot;,&quot;state&quot;:&quot;PA&quot;},&quot;phone&quot;:&quot;(717) 764-6109&quot;,&quot;email&quot;:&quot;info@ycspca.org&quot;},&quot;id&quot;:75323694,&quot;published_at&quot;:&quot;2025-02-26T07:09:21+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323694\/1\/?bust=1740553887&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/york-stray-12229-75323694\/pa\/york\/york-county-spca-pa142\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;PA142&quot;,&quot;name&quot;:&quot;YORK-Stray-12229&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/co213&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75323647&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T06:57:06+0000&quot;,&quot;description&quot;:&quot;This adorable 8-year-old girl is all love.  My foster home says I am laid back and love my soft dog...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Apricot \/ Beige&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Evergreen&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;80437&quot;,&quot;state&quot;:&quot;CO&quot;},&quot;phone&quot;:&quot;(303) 671-4659&quot;,&quot;email&quot;:&quot;retrieversrroc@gmail.com&quot;},&quot;id&quot;:75323647,&quot;published_at&quot;:&quot;2025-02-26T06:57:05+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/bf90ad50-6379-4f31-977d-04e18829fda0\/image\/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/parton-75323647\/co\/evergreen\/retriever-rescue-of-colorado-co213\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Friendly&quot;,&quot;Gentle&quot;],&quot;coat&quot;:&quot;Medium&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Medium&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;CO213&quot;,&quot;name&quot;:&quot;Parton&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:true},&quot;age&quot;:&quot;Adult&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Male&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/or57&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75323535&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T06:38:46+0000&quot;,&quot;description&quot;:&quot;Say hello to Deschutes, a friendly and energetic Golden Retriever! This handsome boy is a social butterfly who loves to...&quot;,&quot;organization_animal_id&quot;:&quot;341135&quot;,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&quot;},{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/2\/?bust=1740552027&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/2\/?bust=1740552027&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/2\/?bust=1740552027&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/2\/?bust=1740552027&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:null},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Troutdale&quot;,&quot;address1&quot;:&quot;1700 Historic Columbia River Highway&quot;,&quot;postcode&quot;:&quot;97060&quot;,&quot;state&quot;:&quot;OR&quot;},&quot;phone&quot;:&quot;(503) 988-7387&quot;,&quot;email&quot;:&quot;multcopets@multco.us&quot;},&quot;id&quot;:75323535,&quot;published_at&quot;:&quot;2025-02-26T06:38:44+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dl5zpyw5k3jeb.cloudfront.net\/photos\/pets\/75323535\/1\/?bust=1740552022&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/deschutes-mcas-75323535\/or\/troutdale\/multnomah-county-animal-services-or57\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[],&quot;coat&quot;:null,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Large&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;OR57&quot;,&quot;name&quot;:&quot;Deschutes (mcas)&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/tx2597&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75321846&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T04:36:32+0000&quot;,&quot;description&quot;:&quot;Hazel is a friendly, playful, one year old pup who loves to cuddle. She is very people oriented and loves...&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:&quot;Golden Retriever&quot;,&quot;mixed&quot;:true,&quot;primary&quot;:&quot;Nova Scotia Duck Tolling Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;Arlington&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;76006&quot;,&quot;state&quot;:&quot;TX&quot;},&quot;phone&quot;:null,&quot;email&quot;:&quot;acesplacerescue@gmail.com&quot;},&quot;id&quot;:75321846,&quot;published_at&quot;:&quot;2025-02-26T04:36:30+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/700f6591-62e7-4eef-8724-30956667e7a6\/image\/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/hazel-75321846\/tx\/arlington\/aces-place-animal-rescue-tx2597\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Friendly&quot;,&quot;Affectionate&quot;,&quot;Playful&quot;,&quot;Curious&quot;,&quot;Loves Kisses&quot;],&quot;coat&quot;:&quot;Short&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:true,&quot;dogs&quot;:true},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;TX2597&quot;,&quot;name&quot;:&quot;Hazel&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:true,&quot;house_trained&quot;:true},&quot;age&quot;:&quot;Young&quot;,&quot;status&quot;:&quot;adoptable&quot;},{&quot;gender&quot;:&quot;Female&quot;,&quot;distance&quot;:null,&quot;_links&quot;:{&quot;organization&quot;:{&quot;href&quot;:&quot;\/v2\/organizations\/tx1588&quot;},&quot;self&quot;:{&quot;href&quot;:&quot;\/v2\/animals\/75320780&quot;},&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;status_changed_at&quot;:&quot;2025-02-26T03:36:39+0000&quot;,&quot;description&quot;:&quot;Rescued from an unfortunate situation. For more adoption information text Margo. 303-667-7622&quot;,&quot;organization_animal_id&quot;:null,&quot;videos&quot;:[],&quot;type&quot;:&quot;Dog&quot;,&quot;photos&quot;:[{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&quot;},{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=100&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=300&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&quot;}],&quot;colors&quot;:{&quot;secondary&quot;:null,&quot;tertiary&quot;:null,&quot;primary&quot;:&quot;Golden&quot;},&quot;breeds&quot;:{&quot;secondary&quot;:null,&quot;mixed&quot;:false,&quot;primary&quot;:&quot;Golden Retriever&quot;,&quot;unknown&quot;:false},&quot;contact&quot;:{&quot;address&quot;:{&quot;country&quot;:&quot;US&quot;,&quot;address2&quot;:null,&quot;city&quot;:&quot;West Hollywood&quot;,&quot;address1&quot;:null,&quot;postcode&quot;:&quot;90069&quot;,&quot;state&quot;:&quot;CA&quot;},&quot;phone&quot;:&quot;3036677622&quot;,&quot;email&quot;:&quot;margo@shelbyshelter.org&quot;},&quot;id&quot;:75320780,&quot;published_at&quot;:&quot;2025-02-26T03:36:38+0000&quot;,&quot;primary_photo_cropped&quot;:{&quot;small&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=300&quot;,&quot;large&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=600&quot;,&quot;medium&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=450&quot;,&quot;full&quot;:&quot;https:\/\/dbw3zep4prcju.cloudfront.net\/animal\/560225fa-1d70-4150-bf30-717a6d0f6a7f\/image\/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&quot;},&quot;url&quot;:&quot;https:\/\/www.petfinder.com\/dog\/raleigh-75320780\/ca\/west-hollywood\/shelby-shelter-tx1588\/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,&quot;tags&quot;:[&quot;Affectionate&quot;,&quot;Gentle&quot;,&quot;Playful&quot;],&quot;coat&quot;:&quot;Medium&quot;,&quot;environment&quot;:{&quot;cats&quot;:null,&quot;children&quot;:null,&quot;dogs&quot;:null},&quot;size&quot;:&quot;Small&quot;,&quot;species&quot;:&quot;Dog&quot;,&quot;organization_id&quot;:&quot;TX1588&quot;,&quot;name&quot;:&quot;Raleigh&quot;,&quot;attributes&quot;:{&quot;shots_current&quot;:true,&quot;special_needs&quot;:false,&quot;declawed&quot;:null,&quot;spayed_neutered&quot;:false,&quot;house_trained&quot;:false},&quot;age&quot;:&quot;Baby&quot;,&quot;status&quot;:&quot;adoptable&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.016</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>18:49:30.663 [print] {
+  &quot;pagination&quot;: {
+    &quot;_links&quot;: {
+      &quot;next&quot;: {
+        &quot;href&quot;: &quot;/v2/animals?breed=golden%20retriever&amp;page=2&quot;
+      }
+    },
+    &quot;count_per_page&quot;: 20,
+    &quot;total_count&quot;: 1103,
+    &quot;total_pages&quot;: 56,
+    &quot;current_page&quot;: 1
+  },
+  &quot;animals&quot;: [
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/nc1205&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75328082&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T16:38:42+0000&quot;,
+      &quot;description&quot;: &quot;Introducing Stuart!\n\nThis fluffy fella ended up at a high kill shelter in Houston. He was added to the euthanasia...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/5adfc85f-c953-4a2b-a18f-624613f45147.jpg?versionId=2.gEC1dl0IGrw4UMML8Oz4ZA4HzvTyEJ&amp;bust=1740588034&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/64d610e2-a9a4-429b-b3fe-272550a3ffa9.jpg?versionId=By4MRCZEf4FS3KjffPHNmzwZPKNHzL7p&amp;bust=1740588034&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e03672d7-38a0-495d-aba8-ffa43260e9d4.jpg?versionId=AO27wETdm9AFNz2ayAGIeT6FlAitALPr&amp;bust=1740588035&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/e412259f-d4a8-420d-8371-2c02be00cd0d.jpg?versionId=1o2FcgK.Z9KngWopHOtI5VdhwMWk8pUz&amp;bust=1740588035&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Apricot / Beige&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Chow Chow&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Houston&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;77018&quot;,
+          &quot;state&quot;: &quot;TX&quot;
+        },
+        &quot;phone&quot;: &quot;(201) 906-7848&quot;,
+        &quot;email&quot;: &quot;info@destinationrescue.org&quot;
+      },
+      &quot;id&quot;: 75328082,
+      &quot;published_at&quot;: &quot;2025-02-26T16:38:40+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d2e9daeb-68bb-4dbe-a1c7-4685a7f54121/image/07e0fcca-8627-407e-b883-5a8bf83798f2.jpg?versionId=g9VwNq6k_gxHwpynfpZNQRFUry0IQUt6&amp;bust=1740588027&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/stuart-75328082/tx/houston/destination-rescue-nc1205/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Curious&quot;,
+        &quot;Friendly&quot;,
+        &quot;Loves&quot;,
+        &quot;Smart&quot;
+      ],
+      &quot;coat&quot;: &quot;Long&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;NC1205&quot;,
+      &quot;name&quot;: &quot;Stuart&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: true
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ct414&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75327643&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T15:27:58+0000&quot;,
+      &quot;description&quot;: &quot;Moose is a sweet, well socialized, friendly pup and he is going to make a welcome addition to his new...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Labrador Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Watertown&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;06795&quot;,
+          &quot;state&quot;: &quot;CT&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;mollibo@gmail.com&quot;
+      },
+      &quot;id&quot;: 75327643,
+      &quot;published_at&quot;: &quot;2025-02-26T15:27:57+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/62d15b60-041d-4476-b49f-9da71bd58310/image/0703aecb-5f7f-41eb-b763-4b047c3cf45a.jpg?versionId=t.fMzl3Qvi4Ll_xScvuKzNy5MG2oE4NZ&amp;bust=1740583607&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/moose-75327643/ct/watertown/companion-pet-rescue-new-england-ct414/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Playful&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: true,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;CT414&quot;,
+      &quot;name&quot;: &quot;Moose&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Baby&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ct414&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75327530&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T15:19:43+0000&quot;,
+      &quot;description&quot;: &quot;Mia is a cute, friendly, well socialized pup and she is going to make a welcome addition to her new...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Black&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Labrador Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Watertown&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;06795&quot;,
+          &quot;state&quot;: &quot;CT&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;mollibo@gmail.com&quot;
+      },
+      &quot;id&quot;: 75327530,
+      &quot;published_at&quot;: &quot;2025-02-26T15:19:42+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/7ced735e-2341-4cf1-9d59-9ec928ff7eb1/image/4e1cd6e6-bf44-43d6-b040-9f2bba90b401.jpg?versionId=XCXctku9xRCsi6nsrJCEBAZiaSa07.gO&amp;bust=1740582751&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/mia-75327530/ct/watertown/companion-pet-rescue-new-england-ct414/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Playful&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: true,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;CT414&quot;,
+      &quot;name&quot;: &quot;Mia&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Baby&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ct414&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75327427&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T15:04:43+0000&quot;,
+      &quot;description&quot;: &quot;Little Ms. Mocha is a cute, friendly, affectionate puppy and will make a welcome addition to their new household!\n\nThis...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: &quot;White / Cream&quot;,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Labrador Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Watertown&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;06795&quot;,
+          &quot;state&quot;: &quot;CT&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;mollibo@gmail.com&quot;
+      },
+      &quot;id&quot;: 75327427,
+      &quot;published_at&quot;: &quot;2025-02-26T15:04:41+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/382e8b22-2a3b-4b66-b13e-ae4bcbd04b64/image/814ae148-6c63-43ce-87d0-4bfb2138d62e.jpg?versionId=Npxj3CxrfcViM8yDSZyttNkHLDauXOqF&amp;bust=1740582204&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/ms-mocha-75327427/ct/watertown/companion-pet-rescue-new-england-ct414/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Funny&quot;,
+        &quot;Playful&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: true,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;CT414&quot;,
+      &quot;name&quot;: &quot;Ms. Mocha&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Baby&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/tx2471&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326951&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T14:49:06+0000&quot;,
+      &quot;description&quot;: null,
+      &quot;organization_animal_id&quot;: &quot;57914408&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: &quot;White / Cream&quot;,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Mixed Breed&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;El Paso&quot;,
+          &quot;address1&quot;: &quot;5001 Fred Wilson&quot;,
+          &quot;postcode&quot;: &quot;79906&quot;,
+          &quot;state&quot;: &quot;TX&quot;
+        },
+        &quot;phone&quot;: &quot;(915) 212-7297&quot;,
+        &quot;email&quot;: &quot;epasadoptions@elpasotexas.gov&quot;
+      },
+      &quot;id&quot;: 75326951,
+      &quot;published_at&quot;: &quot;2025-02-26T14:49:04+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326951/1/?bust=1740581441&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/57914408-75326951/tx/el-paso/el-paso-animal-services-tx2471/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;TX2471&quot;,
+      &quot;name&quot;: &quot;57914408&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/fl618&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326909&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T14:48:07+0000&quot;,
+      &quot;description&quot;: null,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Yellow / Tan / Blond / Fawn&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Australian Shepherd&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Gainesville&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;32653&quot;,
+          &quot;state&quot;: &quot;FL&quot;
+        },
+        &quot;phone&quot;: &quot;(352) 363-1364&quot;,
+        &quot;email&quot;: &quot;s.chancerescue@gmail.com&quot;
+      },
+      &quot;id&quot;: 75326909,
+      &quot;published_at&quot;: &quot;2025-02-26T14:48:06+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/5fe6a025-6d8d-4bfc-b602-78b25fd112d4/image/7a8e65df-c67e-4aaf-a1e7-d72ac13c6de3.jpg?versionId=NycIKFFpDZZW0zpTzZeUEYuMWYbqew0h&amp;bust=1740581215&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/beau-75326909/fl/gainesville/second-chance-rescue-and-rehoming-inc-fl618/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Curious&quot;,
+        &quot;Friendly&quot;,
+        &quot;Funny&quot;,
+        &quot;Playful&quot;,
+        &quot;Smart&quot;
+      ],
+      &quot;coat&quot;: &quot;Medium&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;FL618&quot;,
+      &quot;name&quot;: &quot;Beau&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: true
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ia55&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326880&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T14:40:51+0000&quot;,
+      &quot;description&quot;: &quot;If you have ANY QUESTIONS or are truly interested in adopting any animal from PAW Animal Shelter Please, fillout an...&quot;,
+      &quot;organization_animal_id&quot;: &quot;ps_2314952-10615&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: null
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: &quot;P.O. Box 181&quot;,
+          &quot;city&quot;: &quot;Fort Madison&quot;,
+          &quot;address1&quot;: &quot;2031 48th Street&quot;,
+          &quot;postcode&quot;: &quot;52627&quot;,
+          &quot;state&quot;: &quot;IA&quot;
+        },
+        &quot;phone&quot;: &quot;319-372-2274 &quot;,
+        &quot;email&quot;: &quot;emmittsway@yahoo.com&quot;
+      },
+      &quot;id&quot;: 75326880,
+      &quot;published_at&quot;: &quot;2025-02-26T14:40:50+0000&quot;,
+      &quot;primary_photo_cropped&quot;: null,
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/rowdy-75326880/ia/fort-madison/protectors-of-animal-welfare-p-dot-aw-dot-ia55/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;IA55&quot;,
+      &quot;name&quot;: &quot;Rowdy&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ma128&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326761&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T14:16:36+0000&quot;,
+      &quot;description&quot;: &quot;Hello there , Rufus here. I am 2 years old and house trained and dog friendly. I would love a...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/cf8f6801-a9f4-4a51-b9ad-cf0de590d815.jpg?versionId=4sQsoCOPyskDuk2CmpMhA.iboTEna_iB&amp;bust=1740580201&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/607b4198-15d6-4ae3-b1cf-4b1b232e182d.jpg?versionId=mN8z.vcZtREsS1._G5T.QVVtBpFdi2YQ&amp;bust=1740580198&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/eec6db85-99e2-4088-a751-918f2b54b729.jpg?versionId=ak5QuhuF3ESQ3G6RhV4bLZPYgF_WYbbA&amp;bust=1740580198&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Black&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Labrador Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Gloucester&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;01930&quot;,
+          &quot;state&quot;: &quot;MA&quot;
+        },
+        &quot;phone&quot;: &quot;(978) 283-6055&quot;,
+        &quot;email&quot;: &quot;info@capeannanimalaid.org&quot;
+      },
+      &quot;id&quot;: 75326761,
+      &quot;published_at&quot;: &quot;2025-02-26T14:16:34+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/d05a24a5-155b-4849-b28f-eacffbefe081/image/7031527b-434f-4e5e-80fc-2d096b7e44c9.jpg?versionId=wK5X68PVp_XIw2ty5xqhk7dejTQo8fBJ&amp;bust=1740580201&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/rufus-75326761/ma/gloucester/cape-ann-animal-aid-ma128/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: &quot;Long&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;MA128&quot;,
+      &quot;name&quot;: &quot;Rufus&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: true
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ms09&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326647&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T13:58:56+0000&quot;,
+      &quot;description&quot;: null,
+      &quot;organization_animal_id&quot;: &quot;57871158&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/2/?bust=1740578433&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/2/?bust=1740578433&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/2/?bust=1740578433&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/2/?bust=1740578433&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/3/?bust=1740578433&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/3/?bust=1740578433&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/3/?bust=1740578433&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/3/?bust=1740578433&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: null
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Mixed Breed&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Picayune&quot;,
+          &quot;address1&quot;: &quot;1700 Palestine Road&quot;,
+          &quot;postcode&quot;: &quot;39466&quot;,
+          &quot;state&quot;: &quot;MS&quot;
+        },
+        &quot;phone&quot;: &quot;601-798-8000&quot;,
+        &quot;email&quot;: &quot;prcspca@prcspca.org&quot;
+      },
+      &quot;id&quot;: 75326647,
+      &quot;published_at&quot;: &quot;2025-02-26T13:58:54+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326647/1/?bust=1740578431&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/crown-75326647/ms/picayune/pearl-river-county-spca-ms09/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;MS09&quot;,
+      &quot;name&quot;: &quot;Crown&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: false,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/il959&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326388&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T12:59:04+0000&quot;,
+      &quot;description&quot;: &quot;Meet Robbie, a 2-month-old Golden Retriever from Indiana with a heart full of promise! This adorable little guy is sure...&quot;,
+      &quot;organization_animal_id&quot;: &quot;BTIL-A-26910&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;White / Cream&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Northbrook&quot;,
+          &quot;address1&quot;: &quot;2975 Milwaukee Ave&quot;,
+          &quot;postcode&quot;: &quot;60062&quot;,
+          &quot;state&quot;: &quot;IL&quot;
+        },
+        &quot;phone&quot;: &quot;(847) 813-5774&quot;,
+        &quot;email&quot;: &quot;adopt@bordertailsrescue.org&quot;
+      },
+      &quot;id&quot;: 75326388,
+      &quot;published_at&quot;: &quot;2025-02-26T12:59:02+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75326388/1/?bust=1740574849&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/robbie-75326388/il/northbrook/border-tails-rescue-il959/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;IL959&quot;,
+      &quot;name&quot;: &quot;Robbie&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Baby&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ca270&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75326207&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T12:43:31+0000&quot;,
+      &quot;description&quot;: null,
+      &quot;organization_animal_id&quot;: &quot;SATG-A-9722&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Red / Chestnut / Orange&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Standard Poodle&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Long Beach&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;90804&quot;,
+          &quot;state&quot;: &quot;CA&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;Sparkyandthegang@yahoo.com&quot;
+      },
+      &quot;id&quot;: 75326207,
+      &quot;published_at&quot;: &quot;2025-02-26T12:43:30+0000&quot;,
+      &quot;primary_photo_cropped&quot;: null,
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/bella-doodle-75326207/ca/long-beach/sparky-and-the-gang-ca270/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;CA270&quot;,
+      &quot;name&quot;: &quot;Bella Doodle&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/ia295&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75325968&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T12:12:03+0000&quot;,
+      &quot;description&quot;: null,
+      &quot;organization_animal_id&quot;: &quot;AHIA-A-1671&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Red / Chestnut / Orange&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Golden Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Irish Setter&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Chariton&quot;,
+          &quot;address1&quot;: &quot;118 East Lincoln Ave&quot;,
+          &quot;postcode&quot;: &quot;50049&quot;,
+          &quot;state&quot;: &quot;IA&quot;
+        },
+        &quot;phone&quot;: &quot;(641) 774-2840&quot;,
+        &quot;email&quot;: &quot;manager@almosthomear.com&quot;
+      },
+      &quot;id&quot;: 75325968,
+      &quot;published_at&quot;: &quot;2025-02-26T12:12:01+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75325968/1/?bust=1740572058&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/sully-75325968/ia/chariton/almost-home-animal-rescue-ia295/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;IA295&quot;,
+      &quot;name&quot;: &quot;Sully&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/fl316&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75325844&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T11:58:08+0000&quot;,
+      &quot;description&quot;: &quot;Not looking to play games, just looking for somebody to play fetch with.\n\nI was surrendered to the Humane Society...&quot;,
+      &quot;organization_animal_id&quot;: &quot;HSTB-A-119463&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Tampa&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;33607&quot;,
+          &quot;state&quot;: &quot;FL&quot;
+        },
+        &quot;phone&quot;: &quot;(813) 876-7138&quot;,
+        &quot;email&quot;: &quot;adopt@humanesocietytampa.org&quot;
+      },
+      &quot;id&quot;: 75325844,
+      &quot;published_at&quot;: &quot;2025-02-26T11:58:07+0000&quot;,
+      &quot;primary_photo_cropped&quot;: null,
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/bailey-75325844/fl/tampa/humane-society-of-tampa-bay-fl316/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Good with Dogs&quot;,
+        &quot;Good with Cats&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: true,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;FL316&quot;,
+      &quot;name&quot;: &quot;Bailey&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/il173&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75325337&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T11:37:39+0000&quot;,
+      &quot;description&quot;: &quot;Hi, I&amp;amp;#39;m Bentley. A sweet and loving boy, looking for a loving home.\n\nWhen I arrived at Anderson Animal Shelter...&quot;,
+      &quot;organization_animal_id&quot;: &quot;AHC-A-180902&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;White / Cream&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Golden Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Great Pyrenees&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;South Elgin&quot;,
+          &quot;address1&quot;: &quot;1000 S. LaFox St. (Route 31)&quot;,
+          &quot;postcode&quot;: &quot;60177&quot;,
+          &quot;state&quot;: &quot;IL&quot;
+        },
+        &quot;phone&quot;: &quot;(847) 697-2880&quot;,
+        &quot;email&quot;: &quot;info@ahconnects.org&quot;
+      },
+      &quot;id&quot;: 75325337,
+      &quot;published_at&quot;: &quot;2025-02-26T11:37:38+0000&quot;,
+      &quot;primary_photo_cropped&quot;: null,
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/bentley-75325337/il/south-elgin/anderson-animal-shelter-il173/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Heartworm Positive&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;IL173&quot;,
+      &quot;name&quot;: &quot;Bentley&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/pa835&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75324729&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T10:28:37+0000&quot;,
+      &quot;description&quot;: &quot;Meet Daisy! \nBreed: Golden Retriever / Irish Setter Mix Age: 10 Months \nSurrendered Due to Allergies\nDaisy is a playful,...&quot;,
+      &quot;organization_animal_id&quot;: &quot;ZOE-A-1825&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/2/?bust=1740565830&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/2/?bust=1740565830&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/2/?bust=1740565830&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/2/?bust=1740565830&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/3/?bust=1740565838&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/3/?bust=1740565838&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/3/?bust=1740565838&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/3/?bust=1740565838&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Red / Chestnut / Orange&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Irish Setter&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Sinking Spring&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;19608&quot;,
+          &quot;state&quot;: &quot;PA&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;zoeshouserescue@gmail.com&quot;
+      },
+      &quot;id&quot;: 75324729,
+      &quot;published_at&quot;: &quot;2025-02-26T10:28:35+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75324729/1/?bust=1740565827&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/daisy-75324729/pa/sinking-spring/zoes-house-pa835/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;High Energy&quot;,
+        &quot;Adult Only Home Preferred&quot;
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: false,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;PA835&quot;,
+      &quot;name&quot;: &quot;Daisy&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/pa142&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75323694&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T07:09:23+0000&quot;,
+      &quot;description&quot;: &quot;I was found in Penn Park.&quot;,
+      &quot;organization_animal_id&quot;: &quot;YORK-A-12229&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;York&quot;,
+          &quot;address1&quot;: &quot;3159 N. Susquehanna Trail&quot;,
+          &quot;postcode&quot;: &quot;17406&quot;,
+          &quot;state&quot;: &quot;PA&quot;
+        },
+        &quot;phone&quot;: &quot;(717) 764-6109&quot;,
+        &quot;email&quot;: &quot;info@ycspca.org&quot;
+      },
+      &quot;id&quot;: 75323694,
+      &quot;published_at&quot;: &quot;2025-02-26T07:09:21+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323694/1/?bust=1740553887&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/york-stray-12229-75323694/pa/york/york-county-spca-pa142/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;PA142&quot;,
+      &quot;name&quot;: &quot;YORK-Stray-12229&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/co213&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75323647&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T06:57:06+0000&quot;,
+      &quot;description&quot;: &quot;This adorable 8-year-old girl is all love.  My foster home says I am laid back and love my soft dog...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/2c63698d-71e5-4682-a428-dd7f93c5ef2b.jpg?versionId=zclIeu12TzLCsCAbz6rXXnLCt3HtXsTf&amp;bust=1740552621&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Apricot / Beige&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Evergreen&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;80437&quot;,
+          &quot;state&quot;: &quot;CO&quot;
+        },
+        &quot;phone&quot;: &quot;(303) 671-4659&quot;,
+        &quot;email&quot;: &quot;retrieversrroc@gmail.com&quot;
+      },
+      &quot;id&quot;: 75323647,
+      &quot;published_at&quot;: &quot;2025-02-26T06:57:05+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/bf90ad50-6379-4f31-977d-04e18829fda0/image/4b60bd58-dde9-4bee-8788-8b1d93d7b328.jpg?versionId=7EN7cP.8zgtX78kh3PBTjeAqpkHAfYCg&amp;bust=1740552522&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/parton-75323647/co/evergreen/retriever-rescue-of-colorado-co213/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Friendly&quot;,
+        &quot;Gentle&quot;
+      ],
+      &quot;coat&quot;: &quot;Medium&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Medium&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;CO213&quot;,
+      &quot;name&quot;: &quot;Parton&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: true
+      },
+      &quot;age&quot;: &quot;Adult&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Male&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/or57&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75323535&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T06:38:46+0000&quot;,
+      &quot;description&quot;: &quot;Say hello to Deschutes, a friendly and energetic Golden Retriever! This handsome boy is a social butterfly who loves to...&quot;,
+      &quot;organization_animal_id&quot;: &quot;341135&quot;,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/2/?bust=1740552027&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/2/?bust=1740552027&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/2/?bust=1740552027&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/2/?bust=1740552027&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: null
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Troutdale&quot;,
+          &quot;address1&quot;: &quot;1700 Historic Columbia River Highway&quot;,
+          &quot;postcode&quot;: &quot;97060&quot;,
+          &quot;state&quot;: &quot;OR&quot;
+        },
+        &quot;phone&quot;: &quot;(503) 988-7387&quot;,
+        &quot;email&quot;: &quot;multcopets@multco.us&quot;
+      },
+      &quot;id&quot;: 75323535,
+      &quot;published_at&quot;: &quot;2025-02-26T06:38:44+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/75323535/1/?bust=1740552022&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/deschutes-mcas-75323535/or/troutdale/multnomah-county-animal-services-or57/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+      ],
+      &quot;coat&quot;: null,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Large&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;OR57&quot;,
+      &quot;name&quot;: &quot;Deschutes (mcas)&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/tx2597&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75321846&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T04:36:32+0000&quot;,
+      &quot;description&quot;: &quot;Hazel is a friendly, playful, one year old pup who loves to cuddle. She is very people oriented and loves...&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/9cc87b03-6f78-4e69-b727-309c6bc97185.jpeg?versionId=3T8i5o_ZAsGXO027BQGlz7phyzAjoPVI&amp;bust=1740544445&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/884688ea-e144-4db3-8d8e-72660b5ca3c4.jpeg?versionId=5qCYWnL2HDSp2Niwstw.CQ3Jr.k8EhyX&amp;bust=1740544445&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/149118a8-2ea9-42ab-9fb5-2a7852df2455.jpg?versionId=gALD.UZC9EGCBaHzy9QjHvjcMoI6iS28&amp;bust=1740544529&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/bf8eab28-e654-4869-bbb3-1ba8269ddba1.jpg?versionId=ZX0r56I4XGsBb5xX7FIHEBW3y8HFr1VJ&amp;bust=1740544530&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: &quot;Golden Retriever&quot;,
+        &quot;mixed&quot;: true,
+        &quot;primary&quot;: &quot;Nova Scotia Duck Tolling Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;Arlington&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;76006&quot;,
+          &quot;state&quot;: &quot;TX&quot;
+        },
+        &quot;phone&quot;: null,
+        &quot;email&quot;: &quot;acesplacerescue@gmail.com&quot;
+      },
+      &quot;id&quot;: 75321846,
+      &quot;published_at&quot;: &quot;2025-02-26T04:36:30+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/700f6591-62e7-4eef-8724-30956667e7a6/image/0253d251-f580-4d1d-96df-fe5582ecf106.jpeg?versionId=oT8BReIWgKCuTsv756queyHATZlW28WA&amp;bust=1740544445&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/hazel-75321846/tx/arlington/aces-place-animal-rescue-tx2597/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Friendly&quot;,
+        &quot;Affectionate&quot;,
+        &quot;Playful&quot;,
+        &quot;Curious&quot;,
+        &quot;Loves Kisses&quot;
+      ],
+      &quot;coat&quot;: &quot;Short&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: true,
+        &quot;dogs&quot;: true
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;TX2597&quot;,
+      &quot;name&quot;: &quot;Hazel&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: true,
+        &quot;house_trained&quot;: true
+      },
+      &quot;age&quot;: &quot;Young&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;distance&quot;: null,
+      &quot;_links&quot;: {
+        &quot;organization&quot;: {
+          &quot;href&quot;: &quot;/v2/organizations/tx1588&quot;
+        },
+        &quot;self&quot;: {
+          &quot;href&quot;: &quot;/v2/animals/75320780&quot;
+        },
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;status_changed_at&quot;: &quot;2025-02-26T03:36:39+0000&quot;,
+      &quot;description&quot;: &quot;Rescued from an unfortunate situation. For more adoption information text Margo. 303-667-7622&quot;,
+      &quot;organization_animal_id&quot;: null,
+      &quot;videos&quot;: [
+      ],
+      &quot;type&quot;: &quot;Dog&quot;,
+      &quot;photos&quot;: [
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&quot;
+        },
+        {
+          &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=100&quot;,
+          &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=600&quot;,
+          &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&amp;width=300&quot;,
+          &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/355ecea4-562d-429c-bc5d-7c977047b0c2.jpg?versionId=uMb2UT5kq_oUK8gi7cZbLeBJyhyte8zG&amp;bust=1740538938&quot;
+        }
+      ],
+      &quot;colors&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;tertiary&quot;: null,
+        &quot;primary&quot;: &quot;Golden&quot;
+      },
+      &quot;breeds&quot;: {
+        &quot;secondary&quot;: null,
+        &quot;mixed&quot;: false,
+        &quot;primary&quot;: &quot;Golden Retriever&quot;,
+        &quot;unknown&quot;: false
+      },
+      &quot;contact&quot;: {
+        &quot;address&quot;: {
+          &quot;country&quot;: &quot;US&quot;,
+          &quot;address2&quot;: null,
+          &quot;city&quot;: &quot;West Hollywood&quot;,
+          &quot;address1&quot;: null,
+          &quot;postcode&quot;: &quot;90069&quot;,
+          &quot;state&quot;: &quot;CA&quot;
+        },
+        &quot;phone&quot;: &quot;3036677622&quot;,
+        &quot;email&quot;: &quot;margo@shelbyshelter.org&quot;
+      },
+      &quot;id&quot;: 75320780,
+      &quot;published_at&quot;: &quot;2025-02-26T03:36:38+0000&quot;,
+      &quot;primary_photo_cropped&quot;: {
+        &quot;small&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=300&quot;,
+        &quot;large&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=600&quot;,
+        &quot;medium&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&amp;width=450&quot;,
+        &quot;full&quot;: &quot;https://dbw3zep4prcju.cloudfront.net/animal/560225fa-1d70-4150-bf30-717a6d0f6a7f/image/d4ee77e4-a5f5-4094-8e0c-e340ff6b9650.jpg?versionId=dgvVGoz5opCb49fnVO.w0nN46Wus1jlY&amp;bust=1740538920&quot;
+      },
+      &quot;url&quot;: &quot;https://www.petfinder.com/dog/raleigh-75320780/ca/west-hollywood/shelby-shelter-tx1588/?referrer_id=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&amp;utm_source=api&amp;utm_medium=partnership&amp;utm_content=41b18af0-92c6-4e91-9bbc-b659e9d4ee3e&quot;,
+      &quot;tags&quot;: [
+        &quot;Affectionate&quot;,
+        &quot;Gentle&quot;,
+        &quot;Playful&quot;
+      ],
+      &quot;coat&quot;: &quot;Medium&quot;,
+      &quot;environment&quot;: {
+        &quot;cats&quot;: null,
+        &quot;children&quot;: null,
+        &quot;dogs&quot;: null
+      },
+      &quot;size&quot;: &quot;Small&quot;,
+      &quot;species&quot;: &quot;Dog&quot;,
+      &quot;organization_id&quot;: &quot;TX1588&quot;,
+      &quot;name&quot;: &quot;Raleigh&quot;,
+      &quot;attributes&quot;: {
+        &quot;shots_current&quot;: true,
+        &quot;special_needs&quot;: false,
+        &quot;declawed&quot;: null,
+        &quot;spayed_neutered&quot;: false,
+        &quot;house_trained&quot;: false
+      },
+      &quot;age&quot;: &quot;Baby&quot;,
+      &quot;status&quot;: &quot;adoptable&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def goldenRetrieverBreeds = response.animals.filter(x =&gt; x.breeds.primary.toLowerCase() == 'golden retriever')</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert goldenRetrieverBreeds.length &gt; 0</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,2684 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @RetrieveListOfAllDogsBreedsAvailableOnPetFinder</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ABSA Assessment QA Automation</td>
+            <td>26 Feb 2025, 18:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@RetrieveListOfAllDogsBreedsAvailableOnPetFinder</td>
+                    <td      class="passed"    >8</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1412630917">1.412</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_src-test-java-FeatureFiles-PetFinderAPI-feature.html">src/test/java/FeatureFiles/PetFinderAPI.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_RetrieveListOfAllDogsBreedsAvailableOnPetFinder.html">@RetrieveListOfAllDogsBreedsAvailableOnPetFinder</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1.412</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Retrieve a list of all dog breeds available on pet finder</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def accessToken = read('file:src/test/java/Tokens/OauthAccessToken.txt')</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = 'Bearer ' + accessToken</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">path '/v2/types/dog/breeds'</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1.403</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:49:23.301 request:
+1 &gt; GET https://api.petfinder.com/v2/types/dog/breeds
+1 &gt; Accept: application/json
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpUmxpUlNDNndnUk9VWDFEU2Nyam54Tzd0Y2JZUWxpWlV1N1dFQnZGMWI4QUNpSm5FQiIsImp0aSI6IjllYmNmZDZkYmFhYjUxMDZiN2I4M2I3YWMyOTA2NDUyMjA0YmU3YzIyYWQ3MzExN2M4YmI5M2UxZTdmMzcyMzYxNjdkOTc5MWZkN2JiOGI4IiwiaWF0IjoxNzQwNTg4NTM3LCJuYmYiOjE3NDA1ODg1MzcsImV4cCI6MTc0MDU5MjEzNywic3ViIjoiIiwic2NvcGVzIjpbXX0.H8WWi6UUpmI2rsJ6e7f_jmvIUXOl_Ah7L6BKVL-Y6eTERCSgGuGcV_NbRva-n1Qx1D2F9rzG8Oq2DGhoG-kD-ebhs6OFJFoToQlGElSSfg1SNhoXvizcj6V2gPmkISqR5MK-7vjv4T7rqXckg8YwT8yEd0rlq3RCJulkXZCKM3f6K9PRUn-yEwBaaRByTXV2ExFbvBOGD9JG1A624xGe6MCFQKG2x3bQbjMalMG6fr1I_Xl7iHBPJddhL8ZUEGYkZQQWZBxjpigKCBb6SAaMU8DY0rtVOQqeOL6mQlInf0QUmxcmZS2OnzX23-fykzICKf9pHHrZRdyV1ES7aEmXBg
+1 &gt; Host: api.petfinder.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:49:24.689 response time in milliseconds: 1382
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Date: Wed, 26 Feb 2025 16:49:24 GMT
+1 &lt; x-amzn-Remapped-Date: Wed, 26 Feb 2025 16:49:24 GMT
+1 &lt; x-amzn-RequestId: 3a525022-09d3-4ee6-a914-c3cf56e4ba24
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; x-amzn-Remapped-Connection: keep-alive
+1 &lt; x-amz-apigw-id: GmfjQGZ8IAMEkSQ=
+1 &lt; Cache-Control: max-age=86400, public
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 c886dca4bbead7e6c8986ab0375258ea.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: JNB50-C1
+1 &lt; X-Amz-Cf-Id: aFNET_rPi3R6TiVcudMJLXf3JPI6I6aZfLiGKVkYTiMg83PWbstToA==
+{&quot;breeds&quot;:[{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Affenpinscher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Afghan Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Airedale Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Akbash&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Akita&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Alaskan Malamute&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Bulldog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Bully&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Eskimo Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Foxhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Hairless Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Staffordshire Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;American Water Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Anatolian Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Appenzell Mountain Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Aussiedoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Australian Cattle Dog \/ Blue Heeler&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Australian Kelpie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Australian Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Australian Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Basenji&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Basset Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Beagle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bearded Collie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Beauceron&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bedlington Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Belgian Shepherd \/ Laekenois&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Belgian Shepherd \/ Malinois&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Belgian Shepherd \/ Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Belgian Shepherd \/ Tervuren&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bernedoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bernese Mountain Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bichon Frise&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Black and Tan Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Black Labrador Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Black Mouth Cur&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Black Russian Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bloodhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Blue Lacy&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bluetick Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Boerboel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bolognese&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Border Collie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Border Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Borzoi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Boston Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bouvier des Flandres&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Boxer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Boykin Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Briard&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Brittany Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Brussels Griffon&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bull Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Bullmastiff&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cairn Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Canaan Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cane Corso&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cardigan Welsh Corgi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Carolina Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Catahoula Leopard Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cattle Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Caucasian Sheepdog \/ Caucasian Ovtcharka&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cavachon&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cavalier King Charles Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cavapoo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chesapeake Bay Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chihuahua&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chinese Crested Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chinese Foo Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chinook&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chiweenie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chocolate Labrador Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Chow Chow&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cirneco dell'Etna&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Clumber Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cockapoo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Cocker Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Collie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Corgi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Coton de Tulear&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Curly-Coated Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dachshund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dalmatian&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dandie Dinmont Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Doberman Pinscher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dogo Argentino&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dogue de Bordeaux&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Dutch Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Bulldog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Cocker Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Foxhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Pointer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Setter&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Springer Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;English Toy Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Entlebucher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Eskimo Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Feist&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Field Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Fila Brasileiro&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Finnish Lapphund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Finnish Spitz&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Flat-Coated Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Fox Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Foxhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;French Bulldog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Galgo Spanish Greyhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;German Pinscher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;German Shepherd Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;German Shorthaired Pointer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;German Spitz&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;German Wirehaired Pointer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Giant Schnauzer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Glen of Imaal Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Golden Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Goldendoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Gordon Setter&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Great Dane&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Great Pyrenees&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Greater Swiss Mountain Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Greyhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Hamiltonstovare&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Harrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Havanese&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Hovawart&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Husky&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Ibizan Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Icelandic Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Illyrian Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Irish Setter&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Irish Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Irish Water Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Irish Wolfhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Italian Greyhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Jack Russell Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Japanese Chin&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Jindo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Kai Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Karelian Bear Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Keeshond&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Kerry Blue Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Kishu&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Klee Kai&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Komondor&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Kuvasz&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Kyi Leo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Labradoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Labrador Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Lakeland Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Lancashire Heeler&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Leonberger&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Lhasa Apso&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Lowchen&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Lurcher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Maltese&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Maltipoo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Manchester Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Maremma Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Mastiff&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;McNab&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Miniature Bull Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Miniature Dachshund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Miniature Pinscher&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Miniature Poodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Miniature Schnauzer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Mixed Breed&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Morkie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Mountain Cur&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Mountain Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Munsterlander&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Neapolitan Mastiff&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;New Guinea Singing Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Newfoundland Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Norfolk Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Norwegian Buhund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Norwegian Elkhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Norwegian Lundehund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Norwich Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Nova Scotia Duck Tolling Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Old English Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Otterhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Papillon&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Parson Russell Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Patterdale Terrier \/ Fell Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pekingese&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pembroke Welsh Corgi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Peruvian Inca Orchid&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Petit Basset Griffon Vendeen&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pharaoh Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pit Bull Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Plott Hound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pointer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Polish Lowland Sheepdog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pomeranian&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pomsky&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Poodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Portuguese Podengo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Portuguese Water Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Presa Canario&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pug&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Puggle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Puli&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pumi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Pyrenean Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Rat Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Redbone Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Rhodesian Ridgeback&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Rottweiler&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Rough Collie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Saint Bernard&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Saluki&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Samoyed&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sarplaninac&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Schipperke&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Schnauzer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Schnoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Scottish Deerhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Scottish Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sealyham Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Setter&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shar-Pei&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sheep Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sheepadoodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shetland Sheepdog \/ Sheltie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shiba Inu&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shih poo&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shih Tzu&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Shollie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Siberian Husky&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Silky Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Skye Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sloughi&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Smooth Collie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Smooth Fox Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;South Russian Ovtcharka&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Spanish Water Dog&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Spinone Italiano&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Spitz&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Staffordshire Bull Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Standard Poodle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Standard Schnauzer&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Sussex Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Swedish Vallhund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Tennessee Treeing Brindle&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Thai Ridgeback&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Tibetan Mastiff&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Tibetan Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Tibetan Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Tosa Inu&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Toy Fox Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Toy Manchester Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Treeing Walker Coonhound&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Vizsla&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Weimaraner&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Welsh Springer Spaniel&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Welsh Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;West Highland White Terrier \/ Westie&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Wheaten Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Whippet&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;White German Shepherd&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Wire Fox Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Wirehaired Dachshund&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Wirehaired Pointing Griffon&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Wirehaired Terrier&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Xoloitzcuintli \/ Mexican Hairless&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Yellow Labrador Retriever&quot;},{&quot;_links&quot;:{&quot;type&quot;:{&quot;href&quot;:&quot;\/v2\/types\/dog&quot;}},&quot;name&quot;:&quot;Yorkshire Terrier&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>18:49:24.698 [print] {
+  &quot;breeds&quot;: [
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Affenpinscher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Afghan Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Airedale Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Akbash&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Akita&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Alaskan Malamute&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Bulldog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Bully&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Eskimo Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Foxhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Hairless Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Staffordshire Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;American Water Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Anatolian Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Appenzell Mountain Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Aussiedoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Australian Cattle Dog / Blue Heeler&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Australian Kelpie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Australian Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Australian Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Basenji&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Basset Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Beagle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bearded Collie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Beauceron&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bedlington Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Belgian Shepherd / Laekenois&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Belgian Shepherd / Malinois&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Belgian Shepherd / Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Belgian Shepherd / Tervuren&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bernedoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bernese Mountain Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bichon Frise&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Black and Tan Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Black Labrador Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Black Mouth Cur&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Black Russian Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bloodhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Blue Lacy&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bluetick Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Boerboel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bolognese&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Border Collie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Border Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Borzoi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Boston Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bouvier des Flandres&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Boxer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Boykin Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Briard&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Brittany Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Brussels Griffon&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bull Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Bullmastiff&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cairn Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Canaan Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cane Corso&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cardigan Welsh Corgi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Carolina Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Catahoula Leopard Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cattle Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Caucasian Sheepdog / Caucasian Ovtcharka&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cavachon&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cavalier King Charles Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cavapoo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chesapeake Bay Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chihuahua&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chinese Crested Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chinese Foo Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chinook&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chiweenie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chocolate Labrador Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Chow Chow&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cirneco dell'Etna&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Clumber Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cockapoo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Cocker Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Collie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Corgi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Coton de Tulear&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Curly-Coated Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dachshund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dalmatian&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dandie Dinmont Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Doberman Pinscher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dogo Argentino&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dogue de Bordeaux&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Dutch Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Bulldog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Cocker Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Foxhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Pointer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Setter&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Springer Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;English Toy Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Entlebucher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Eskimo Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Feist&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Field Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Fila Brasileiro&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Finnish Lapphund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Finnish Spitz&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Flat-Coated Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Fox Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Foxhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;French Bulldog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Galgo Spanish Greyhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;German Pinscher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;German Shepherd Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;German Shorthaired Pointer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;German Spitz&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;German Wirehaired Pointer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Giant Schnauzer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Glen of Imaal Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Golden Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Goldendoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Gordon Setter&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Great Dane&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Great Pyrenees&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Greater Swiss Mountain Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Greyhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Hamiltonstovare&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Harrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Havanese&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Hovawart&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Husky&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Ibizan Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Icelandic Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Illyrian Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Irish Setter&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Irish Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Irish Water Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Irish Wolfhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Italian Greyhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Jack Russell Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Japanese Chin&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Jindo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Kai Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Karelian Bear Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Keeshond&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Kerry Blue Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Kishu&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Klee Kai&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Komondor&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Kuvasz&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Kyi Leo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Labradoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Labrador Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Lakeland Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Lancashire Heeler&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Leonberger&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Lhasa Apso&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Lowchen&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Lurcher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Maltese&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Maltipoo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Manchester Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Maremma Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Mastiff&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;McNab&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Miniature Bull Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Miniature Dachshund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Miniature Pinscher&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Miniature Poodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Miniature Schnauzer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Mixed Breed&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Morkie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Mountain Cur&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Mountain Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Munsterlander&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Neapolitan Mastiff&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;New Guinea Singing Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Newfoundland Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Norfolk Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Norwegian Buhund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Norwegian Elkhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Norwegian Lundehund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Norwich Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Nova Scotia Duck Tolling Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Old English Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Otterhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Papillon&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Parson Russell Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Patterdale Terrier / Fell Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pekingese&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pembroke Welsh Corgi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Peruvian Inca Orchid&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Petit Basset Griffon Vendeen&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pharaoh Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pit Bull Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Plott Hound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pointer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Polish Lowland Sheepdog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pomeranian&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pomsky&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Poodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Portuguese Podengo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Portuguese Water Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Presa Canario&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pug&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Puggle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Puli&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pumi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Pyrenean Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Rat Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Redbone Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Rhodesian Ridgeback&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Rottweiler&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Rough Collie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Saint Bernard&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Saluki&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Samoyed&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sarplaninac&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Schipperke&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Schnauzer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Schnoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Scottish Deerhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Scottish Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sealyham Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Setter&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shar-Pei&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sheep Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sheepadoodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shetland Sheepdog / Sheltie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shiba Inu&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shih poo&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shih Tzu&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Shollie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Siberian Husky&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Silky Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Skye Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sloughi&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Smooth Collie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Smooth Fox Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;South Russian Ovtcharka&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Spanish Water Dog&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Spinone Italiano&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Spitz&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Staffordshire Bull Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Standard Poodle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Standard Schnauzer&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Sussex Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Swedish Vallhund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Tennessee Treeing Brindle&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Thai Ridgeback&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Tibetan Mastiff&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Tibetan Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Tibetan Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Tosa Inu&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Toy Fox Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Toy Manchester Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Treeing Walker Coonhound&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Vizsla&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Weimaraner&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Welsh Springer Spaniel&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Welsh Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;West Highland White Terrier / Westie&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Wheaten Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Whippet&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;White German Shepherd&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Wire Fox Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Wirehaired Dachshund&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Wirehaired Pointing Griffon&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Wirehaired Terrier&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Xoloitzcuintli / Mexican Hairless&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Yellow Labrador Retriever&quot;
+    },
+    {
+      &quot;_links&quot;: {
+        &quot;type&quot;: {
+          &quot;href&quot;: &quot;/v2/types/dog&quot;
+        }
+      },
+      &quot;name&quot;: &quot;Yorkshire Terrier&quot;
+    }
+  ]
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response contains { breeds: '#[]' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.breeds[0] contains { name: '#string' }</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

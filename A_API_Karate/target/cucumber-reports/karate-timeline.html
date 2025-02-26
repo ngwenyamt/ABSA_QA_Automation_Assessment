@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[1:22]","start":1740588485610,"end":1740588537889,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[1:22] 18:48:05.610-18:48:57.889 Get an OAuth2.0 access token"},{"id":2,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[2:41]","start":1740588541917,"end":1740588543787,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[2:41] 18:49:01.917-18:49:03.787 Retrieve a list of all animal types available on pet finder using Get method"},{"id":3,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[3:56]","start":1740588547806,"end":1740588548898,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[3:56] 18:49:07.806-18:49:08.898 Retrieve a list of all animal types available on pet finder using Post method"},{"id":4,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[4:71]","start":1740588552914,"end":1740588554267,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[4:71] 18:49:12.914-18:49:14.267 Verify that Dog is one of the animal types returned"},{"id":5,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[5:90]","start":1740588558276,"end":1740588559257,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[5:90] 18:49:18.276-18:49:19.257 Verify the data structure of the animal types returned"},{"id":6,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[6:109]","start":1740588563280,"end":1740588564698,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[6:109] 18:49:23.280-18:49:24.698 Retrieve a list of all dog breeds available on pet finder"},{"id":7,"group":1,"content":"src\/test\/java\/FeatureFiles\/PetFinderAPI[7:128]","start":1740588568716,"end":1740588570681,"title":"src\/test\/java\/FeatureFiles\/PetFinderAPI[7:128] 18:49:28.716-18:49:30.681 Search for dogs of the \"golden retriever\" breed and verify that at least one result is returned"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
